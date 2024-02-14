@@ -24,19 +24,63 @@
                   <a class="nav-link" href="index.html">Kezdőlap</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Cipők</a>
+                  <a class="nav-link" href="cipok.html">Cipők</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Értékelés</a>
+                  <a class="nav-link" href="ertekeles.html"">Értékelés</a>
                 </li>
               </ul>
         </nav>
         <div class="row">
-            <aside class="col-md-4">
+            <aside class="col-md-3">
+                <form action="">
+                    <fieldset>
+                        <legend>Gyorskeresés</legend>
+                        <label for="marka">Márka</label>
+                        <input type="text" class="form-control" id="marka" placeholder="Márka"><br>
+                        <label for="ar">Ár</label>
+                        <div class="input-group mb-3">
+                        <input type="number" min="0" id="ar" class="form-control" placeholder="min 10000">
+                        <input type="number" min="0" id="ar" class="form-control">
+                        </div>
+                        <input type="range" class="form-range" id="customRange"><br>
+                        <label for="check1">Szállítási módok:</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="foxpost" unchecked>
+                            <label class="form-check-label">Foxpost</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="check1" name="option2" value="gls" unchecked>
+                            <label class="form-check-label">GLS</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="check1" name="option3" value="hazszallit" unchecked>
+                            <label class="form-check-label">Házhozszállítás</label>
+                        </div>
 
+                    </fieldset>
+                </form>
             </aside>
-            <article class="col-md-8">
-                
+            <article class="col-md-9">
+                <div class="row">
+                    <h1>Cipők</h1>
+                    <div class="card col-md-6" style="width:400px">
+                        <img class="card-img-top" src="kepek/jarritos.webp" alt="Card image">
+                        <div class="card-body">
+                          <h4 class="card-title">NIKE SB DUNK LOW X JARRITOS 'PHANTOM'</h4>
+                          <p class="card-text">A Nike Dunk az utóbbi idők egyik legfelkapottabb sneaker modelljévé vált. A cipő gördeszkázásra nagyon alkalmas ezért is az egyik leghíresebb "deszkás" sneaker ami a 2020-as évtől kapott hype-ot. Azóta rengeteg kollaborációt, különleges modellt épített fel rá a Nike, ami a 2000-2010-es évek után most éli a reneszánszát.</p>
+                          <a href="#" class="btn btn-primary">Kosárba rakás</a>
+                        </div>
+                      </div>
+                      <div class="card col-md-6" style="width:400px">
+                        <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+                        <div class="card-body">
+                          <h4 class="card-title">John Doe</h4>
+                          <p class="card-text">Some example text.</p>
+                          <a href="#" class="btn btn-primary">See Profile</a>
+                        </div>
+                      </div>
+                </div>
             </article>
         </div>
     </main>
